@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Movie Roulette</string>
+    <string name="search_movie_button">Search For Movie</string>
+    <string name="year_switch">Search by year  \n released</string>
+    <string name="genre_switch">Search movie   \n with genre</string>
+    <string name="select_genre_button">Select Genre</string>
+    <string name="md_back_button">Search Again</string>
+    <string name="md_imdb_button">More Info</string>
+    <string name="md_add_button">Add Movie \n to Database</string>
+    <string name="placeholder">placeholder</string>
+    <string name="poster_description">Movie Poster</string>
+    <string name="clear_database_button">Hold to clear your Database</string>
+</resources>

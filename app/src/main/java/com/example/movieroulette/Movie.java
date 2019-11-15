@@ -1,5 +1,6 @@
 package com.example.movieroulette;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import java.util.ArrayList;
 
@@ -16,11 +17,12 @@ public class Movie{
 
     /**
      * Overloaded constructor to create a full movie object through the API using its id
-     * @param id    TMDb id of the movie
+     * @param id        TMDb id of the movie
+     * @param context   Context of an activity in order to use a TMDB_Wrapper object
      */
-    public Movie(String id){
+    public Movie(String id, Context context){
         // Wrapper for sending requests to TMDb api
-        TMDB_Wrapper tmdb = new TMDB_Wrapper();
+        TMDB_Wrapper tmdb = new TMDB_Wrapper(context);
         Movie temp = tmdb.GetMovieDetails(id);
 
         genres = temp.getGenres();

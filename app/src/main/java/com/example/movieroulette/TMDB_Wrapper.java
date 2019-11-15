@@ -28,6 +28,8 @@ public final class TMDB_Wrapper {
     // API key necessary for sending requests towards the TMDb API
     private static String API_KEY = "TMDb_API_KEY";
 
+    // Constructor that needs a context argument in order to access resources to get the
+    // necessary api key for TMDb
     public TMDB_Wrapper(Context context){
         API_KEY = context.getResources().getString(R.string.TMDb_API_KEY);
     }

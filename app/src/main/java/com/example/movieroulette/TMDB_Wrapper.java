@@ -1,5 +1,6 @@
 package com.example.movieroulette;
 
+import android.content.Context;
 import android.graphics.BitmapFactory;
 
 import org.json.JSONArray;
@@ -25,7 +26,12 @@ import java.util.HashMap;
 public final class TMDB_Wrapper {
 
     // API key necessary for sending requests towards the TMDb API
-    private static final String API_KEY = "TMDb_API_KEY";
+    private static String API_KEY = "TMDb_API_KEY";
+
+    public TMDB_Wrapper(Context context){
+        API_KEY = context.getResources().getString(R.string.TMDb_API_KEY);
+    }
+
     // URLs for various parts of the TMDb API
     private static final String GENRE_URL = "https://api.themoviedb.org/3/genre/movie/list?api_key=";
     private static final String DISCOVER_URL = "https://api.themoviedb.org/3/discover/movie?api_key=";

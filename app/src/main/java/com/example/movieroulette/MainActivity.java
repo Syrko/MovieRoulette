@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         requestInternetPermission();
 
         // Initializing TMDB_Wrapper for use
-        tmdb = new TMDB_Wrapper();
+        tmdb = new TMDB_Wrapper(this);
 
         // Referencing UI
         yearSwitch = findViewById(R.id.yearSwitch);

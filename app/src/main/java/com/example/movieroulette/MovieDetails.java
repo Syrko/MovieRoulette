@@ -57,7 +57,7 @@ public class MovieDetails extends AppCompatActivity {
         assignButtonListeners();
 
         // Get movie from extras
-        movie = new Movie(getIntent().getStringExtra("Movie"));
+        movie = new Movie(getIntent().getStringExtra("Movie"), this);
 
         showMovieDetails();
 

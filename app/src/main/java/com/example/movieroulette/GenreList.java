@@ -29,7 +29,7 @@ public class GenreList extends AppCompatActivity {
         setContentView(R.layout.activity_genre_list);
 
         genreList = findViewById(R.id.genreList);
-        tmdb = new TMDB_Wrapper();
+        tmdb = new TMDB_Wrapper(this);
 
         populateGenreList();
         AssignListenerToList();

@@ -8,7 +8,7 @@ Each movie can be added to the user's database so it doesn't get suggested again
 
 Getting Started
 ---------------
-This repository contains the Android Studio project which you can compile on your own, as well as a folder containing the debug-apk of latest version.
+This repository contains the Android Studio project which you can compile on your own, as well as a folder containing the debug-apk of the latest version. If you build it yourself you will need an API key from [TMDb](https://developers.themoviedb.org/3), which you need to store in a values resource xml as `<string name="TMDb_API_KEY">YOUR_API_KEY</string>`
 
 Prerequisites
 -------------
